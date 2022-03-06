@@ -7,31 +7,7 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
+.main {
+  background-image: url(../assets/47f71d4.jpg);
   min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.genshin-logo {
-  flex-grow: 1;
-}
-.genshin-logo:hover {
-  color: red;
-}
-
-.navigation {
-  display: flex;
-  flex-grow: 5;
-  justify-content: space-evenly;
-  list-style: none;
-  width: 40%;
-}
-
-.logindownload {
-  display: flex;
-  flex-grow: 1;
 }

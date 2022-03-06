@@ -1,12 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
+
+const headerHeight = 7;
 
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <main>asdad</main>
+      <Header height={headerHeight} />
+      <main className="main">
+        <div>asd</div>
+      </main>
       <footer>asdasd</footer>
     </div>
   );
