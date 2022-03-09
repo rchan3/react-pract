@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { headerLinks } from "../../constants";
+import downloadButton from "./download.png";
 import "./styles.css";
 
 const HeaderComponent = (props) => {
@@ -31,7 +32,9 @@ const HeaderComponent = (props) => {
         <div onClick={onLoginClick} style={loginStyles}>
           log in
         </div>
-        <div className="download-link">download</div>
+        <div className="download-link">
+          <img src={downloadButton} alt=""></img>
+        </div>
       </div>
     </header>
   );
