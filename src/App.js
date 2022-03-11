@@ -8,7 +8,14 @@ const App = () => {
     <div className="App">
       <Header height={headerHeight} />
       <main className="main">
-        <div>asd</div>
+        <div className="home"></div>
+        <div className="news"></div>
+        <div className="regions">
+          <div className="region-mondstadt">mondstadt</div>
+          <div className="region-liyue">liyue</div>
+          <div className="region-inazuma">inazuma</div>
+          <div className="region-comingsoon">coming soon</div>
+        </div>
       </main>
       <footer>asdasd</footer>
     </div>
