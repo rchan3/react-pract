@@ -32,9 +32,8 @@ const HeaderComponent = (props) => {
         <div onClick={onLoginClick} style={loginStyles}>
           log in
         </div>
-        <div className="download-link">
-          <img src={downloadButton} alt=""></img>
-        </div>
+        <div className="download-link"></div>
+        <img src={downloadButton} alt=""></img>
       </div>
     </header>
   );
