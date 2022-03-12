@@ -1,0 +1,10 @@
+.news {
+  background-image: url(./29770c4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 96vh;
+}
+
+.news h3 {
+  font-family: Helvetica;
+}
