@@ -13,17 +13,6 @@
   min-height: 100vh;
 }
 
-.news {
-  background-image: url(../assets/29770c4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 96vh;
-}
-
-.news h3 {
-  font-family: Helvetica;
-}
-
 .regions {
   flex-direction: column;
 }
