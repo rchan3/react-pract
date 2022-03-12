@@ -1,0 +1,28 @@
+.regions {
+  flex-direction: column;
+}
+
+.region-mondstadt {
+  background-image: url(./2020021114275255981.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.region-liyue {
+  background-image: url(./2020052612372361982.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.region-inazuma {
+  background-image: url(./2021072015230536749.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.region-comingsoon {
+  background-image: url(./9a62be8.jpg);
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.3);
+}
