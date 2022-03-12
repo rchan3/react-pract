@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import HomeRegion from "./components/home-region/Home-region";
+import HomeNews from "./components/home-news/Home-news";
 
 const headerHeight = 7;
 
@@ -11,10 +12,7 @@ const App = () => {
       <Header height={headerHeight} />
       <main className="main">
         <div className="home"></div>
-        <div className="news">
-          <h3>news</h3>
-          <div className="news-main"></div>
-        </div>
+        <HomeNews />
         <HomeRegion />
       </main>
       <Footer />
