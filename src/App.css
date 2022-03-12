@@ -8,11 +8,6 @@
   text-align: center;
 }
 
-.home {
-  background-image: url(../assets/47f71d4.jpg);
-  min-height: 100vh;
-}
-
 .regions {
   flex-direction: column;
 }
