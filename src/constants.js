@@ -3,7 +3,7 @@ export const headerLinks = [
   "News",
   "Characters",
   "Explore",
-  "HoyoLab",
+  "HoYoLAB",
   "Top-Up",
   "Redeem Code",
 ];
