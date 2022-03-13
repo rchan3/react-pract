@@ -3,13 +3,33 @@
   flex-direction: column;
   height: 100%;
   align-items: stretch;
+  color: white;
 }
 
-.regions div {
+.region-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.region-wrapper div {
+  width: 100%;
+  height: 100%;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: all 0.5s;
+}
+
+.region-wrapper div:hover {
+  transform: scale(1.1);
+}
+
+.region-wrapper:hover {
+  border: 0.5vh solid white;
+  box-sizing: border-box;
 }
 
 .regions div p {
@@ -17,6 +37,7 @@
   padding-top: 13vh;
   padding-bottom: 13vh;
   text-transform: capitalize;
+  transition: all 1s;
 }
 
 .region-mondstadt {
