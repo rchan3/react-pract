@@ -23,7 +23,7 @@
   transition: all 0.5s;
 }
 
-.region-wrapper div:hover {
+.region-wrapper:hover div {
   transform: scale(1.1);
   transform-origin: top;
 }
