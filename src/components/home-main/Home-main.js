@@ -53,7 +53,23 @@ const HomeMainComponent = (props) => {
             />
           </a>
         </div>
-        <div className="home-main-down-arrow"></div>
+        <div className="home-main-down-arrow">
+          <img
+            className="main-down-arrow mda1"
+            src={require("./home-main-arrow.png")}
+            alt=""
+          />
+          <img
+            className="main-down-arrow mda2"
+            src={require("./home-main-arrow.png")}
+            alt=""
+          />
+          <img
+            className="main-down-arrow mda3"
+            src={require("./home-main-arrow.png")}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

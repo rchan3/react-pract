@@ -4,7 +4,7 @@
 }
 
 .home-main-flex {
-  min-height: 100vh;
+  min-height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -17,4 +17,47 @@
 
 .home-main-download-buttons {
   display: flex;
+}
+
+.home-main-download-buttons a {
+  opacity: 0.8;
+}
+
+.home-main-download-buttons a:hover {
+  opacity: 1;
+}
+
+.home-main-down-arrow {
+  position: relative;
+}
+
+.mda1 {
+  position: absolute;
+  top: 0;
+  -webkit-animation: Main-down-arrow infinite 1.5s ease-in alternate;
+  -moz-animation: Main-down-arrow infinite 1.5s ease-in alternate;
+  animation: Main-down-arrow infinite 1.5s ease-in alternate;
+}
+@keyframes Main-down-arrow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mda2 {
+  position: absolute;
+  top: 12px;
+  -webkit-animation: Main-down-arrow infinite 1.5s ease-in alternate 0.5s;
+  -moz-animation: Main-down-arrow infinite 1.5s ease-in alternate 0.5s;
+  animation: Main-down-arrow infinite 1.5s ease-in alternate 0.5s;
+}
+
+.mda3 {
+  position: absolute;
+  top: 24px;
+  -webkit-animation: Main-down-arrow infinite 1.5s ease-in alternate -1s;
+  -moz-animation: Main-down-arrow infinite 1.5s ease-in alternate -1s;
+  animation: Main-down-arrow infinite 1.5s ease-in alternate -1s;
 }
