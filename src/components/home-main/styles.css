@@ -2,3 +2,10 @@
   background-image: url(./47f71d4.jpg);
   min-height: 100vh;
 }
+
+.home-main-flex {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
