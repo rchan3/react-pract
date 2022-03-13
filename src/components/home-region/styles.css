@@ -25,6 +25,7 @@
 
 .region-wrapper div:hover {
   transform: scale(1.1);
+  transform-origin: top;
 }
 
 .region-wrapper:hover {
@@ -41,25 +42,43 @@
 }
 
 .region-mondstadt {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./2020021114275255981.jpg);
+  width: 100%;
+}
+
+.region-mondstadt:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(./2020021114275255981.jpg);
   width: 100%;
 }
 
 .region-liyue {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./2020052612372361982.jpg);
+  width: 100%;
+}
+
+.region-liyue:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url(./2020052612372361982.jpg);
   width: 100%;
 }
 
 .region-inazuma {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./2021072015230536749.jpg);
+  width: 100%;
+}
+
+.region-inazuma:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
     url(./2021072015230536749.jpg);
   width: 100%;
 }
 
 .region-comingsoon {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(./9a62be8.jpg);
   width: 100%;
 
