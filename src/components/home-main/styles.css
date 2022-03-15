@@ -3,6 +3,7 @@
   font-size: 30px;
   background-image: url(./47f71d4.jpg);
   min-height: 100vh;
+  position: relative;
 }
 
 .home-main-flex {
@@ -20,6 +21,7 @@
 
 .home-main-download-buttons {
   display: flex;
+  gap: 1vw;
 }
 
 .home-main-download-buttons a {
@@ -32,6 +34,13 @@
 
 .home-main-down-arrow {
   position: relative;
+}
+
+.esrb-rating {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1vh;
 }
 
 .mda1 {
