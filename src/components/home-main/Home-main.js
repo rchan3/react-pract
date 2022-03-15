@@ -71,6 +71,11 @@ const HomeMainComponent = (props) => {
           />
         </div>
       </div>
+      <img
+        className="esrb-rating"
+        src={require("./2020092514130499814.png")}
+        alt=""
+      />
     </div>
   );
 };
