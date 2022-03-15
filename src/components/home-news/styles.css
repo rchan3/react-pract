@@ -8,3 +8,8 @@
 .news h3 {
   font-family: Helvetica;
 }
+
+.mySwiper {
+  height: 40vh;
+  background-color: pink;
+}
