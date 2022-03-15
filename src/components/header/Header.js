@@ -1,21 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { headerLinks } from "../../constants";
 import downloadButton from "./download.png";
 import "./styles.css";
 
 const HeaderComponent = (props) => {
-  const [loginColor, setLoginColor] = useState("pink");
+  // const [loginColor, setLoginColor] = useState("pink");
 
-  const loginStyles = { color: loginColor };
+  // const loginStyles = { color: loginColor };
 
-  const onLoginClick = () => {
-    setLoginColor("green");
-  };
+  // const onLoginClick = () => {
+  //   setLoginColor("green");
+  // };
 
   const renderLinks = () => {
     const linkArr = [];
     headerLinks.forEach((link) => {
-      const listElement = <li className="navigation-links">{link}</li>;
+      const listElement = (
+        <li className="navigation-links" key={link}>
+          {link}
+        </li>
+      );
       linkArr.push(listElement);
     });
 
@@ -24,14 +28,15 @@ const HeaderComponent = (props) => {
 
   return (
     <header className="App-header">
-      <div className="genshin-logo" onClick={() => console.log("hi")}>
-        genshin logo
-      </div>
-      <ul className="navigation">{renderLinks()}</ul>
-      <div className="logindownload">
-        <div onClick={onLoginClick} style={loginStyles}>
-          log in
+      <div className="header-left">
+        <div className="genshin-logo">
+          <img src={require("./genshin_logo.png")} alt="" />
         </div>
+        <ul className="navigation">{renderLinks()}</ul>
+      </div>
+
+      <div className="logindownload">
+        <div>log in</div>
         <div className="download-link"></div>
         <img src={downloadButton} alt=""></img>
       </div>
