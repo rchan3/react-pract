@@ -7,5 +7,3 @@ export const headerLinks = [
   "Top-Up",
   "Redeem Code",
 ];
-
-export const test = [1, 2, 3, 4, 5];
