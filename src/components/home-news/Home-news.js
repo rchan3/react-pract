@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./styles.css";
 // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 // import Swiper and modules styles
 import "swiper/swiper.min.css"; // core Swiper
 import "swiper/modules/pagination/pagination.min.css"; // Pagination module
@@ -26,6 +26,14 @@ class HomeNews extends Component {
       this.newsCarousel();
     }
   }
+
+  const autoplay = {
+    delay: 4500,
+    disableOnInteraction: false,
+  };
+
+
+
 
   newsCarousel = () => {
     console.log("newscarousel", this.props);
@@ -63,5 +71,6 @@ class HomeNews extends Component {
     );
   }
 }
+
 
 export default HomeNews;
