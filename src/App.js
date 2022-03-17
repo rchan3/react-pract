@@ -21,7 +21,7 @@ class App extends Component {
       .then((res) => this.setState({ apiResponse: res }));
   }
 
-  UNSAFE_componentWillMount() {
+  componentDidMount() {
     this.callAPI();
   }
 
