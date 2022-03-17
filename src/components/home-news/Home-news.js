@@ -33,12 +33,9 @@ class HomeNews extends Component {
   }
 
   newsCarousel = () => {
-    console.log("newscarousel", this.props);
     const carousel = [];
     if (this.state.newsImagePath.length > 0) {
       this.props.newsImagePath.forEach((element) => {
-        console.log(element.srcURL);
-
         carousel.push(
           <SwiperSlide key={element.srcURL}>
             <img src={require(`${element.srcURL}`)} alt={element.srcAlt} />
