@@ -14,6 +14,11 @@ const pagination = {
   },
 };
 
+const autoplay = {
+  delay: 4500,
+  disableOnInteraction: false,
+};
+
 class HomeNews extends Component {
   constructor(props) {
     super(props);
@@ -26,14 +31,6 @@ class HomeNews extends Component {
       this.newsCarousel();
     }
   }
-
-  const autoplay = {
-    delay: 4500,
-    disableOnInteraction: false,
-  };
-
-
-
 
   newsCarousel = () => {
     console.log("newscarousel", this.props);
@@ -62,7 +59,8 @@ class HomeNews extends Component {
         </div>
         <Swiper
           pagination={pagination}
-          modules={[Pagination]}
+          autoplay={autoplay}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
           {this.newsCarousel()}
@@ -71,6 +69,5 @@ class HomeNews extends Component {
     );
   }
 }
-
 
 export default HomeNews;
