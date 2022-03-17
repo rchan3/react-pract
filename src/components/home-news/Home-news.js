@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react.js";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 // import Swiper and modules styles
 import "swiper/swiper.min.css"; // core Swiper
 import "swiper/modules/pagination/pagination.min.css"; // Pagination module
@@ -13,6 +13,11 @@ const HomeNews = (props) => {
     renderBullet: (index, className) => {
       return `<span class="${className}"></span>`;
     },
+  };
+
+  const autoplay = {
+    delay: 4500,
+    disableOnInteraction: false,
   };
 
   const newsImagePath = [
@@ -50,15 +55,16 @@ const HomeNews = (props) => {
     <div className="news">
       <h3>news</h3>
       <div className="news-main">
-        <div className="news-links"></div>
+        <Swiper
+          pagination={pagination}
+          autoplay={autoplay}
+          modules={[Pagination, Autoplay]}
+          className="mySwiper"
+        >
+          {newsCarousel()}
+        </Swiper>
+        <div className="news-links">somelinks</div>
       </div>
-      <Swiper
-        pagination={pagination}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {newsCarousel()}
-      </Swiper>
     </div>
   );
 };
