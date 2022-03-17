@@ -17,7 +17,7 @@ class App extends Component {
 
   callAPI() {
     fetch("http://localhost:9000/testAPI")
-      .then((res) => res.text())
+      .then((res) => res.json())
       .then((res) => this.setState({ apiResponse: res }));
   }
 
@@ -30,9 +30,8 @@ class App extends Component {
       <div className="App">
         <Header height={headerHeight} />
         <main className="main">
-          <p className="App-intro">;{this.state.apiResponse}</p>
           <HomeMain />
-          <HomeNews />
+          <HomeNews newsImagePath={this.state.apiResponse} />
           <HomeRegion />
         </main>
         <Footer />
