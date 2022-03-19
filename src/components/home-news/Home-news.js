@@ -52,16 +52,34 @@ class HomeNews extends Component {
       <div className="news">
         <h3>news</h3>
         <div className="news-main">
-          <div className="news-links"></div>
+          <Swiper
+            pagination={pagination}
+            autoplay={autoplay}
+            modules={[Pagination, Autoplay]}
+            className="mySwiper"
+          >
+            {this.newsCarousel()}
+          </Swiper>
+          <div className="news-links">
+            <h4>latest</h4>
+            <div className="news-list">
+              <ul>
+                <li>"Of Drink A-Dreaming" Gameplay Details</li>
+                <li>Genshin Impact EP - A Scenery of Skylight and Serenity</li>
+                <li>Genshin Impact EP - The Iridescent Waves</li>
+                <li>
+                  Paimon's Sneak Peek at Version 2.5 New Events - Phase II
+                </li>
+                <li>
+                  Event Wish "Epitome Invocation" - Boosted Drop Rate for
+                  Engulfing Lightning (Polearm) and Everlasting Moonglow
+                  (Catalyst)!
+                </li>
+                <li>more</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <Swiper
-          pagination={pagination}
-          autoplay={autoplay}
-          modules={[Pagination, Autoplay]}
-          className="mySwiper"
-        >
-          {this.newsCarousel()}
-        </Swiper>
       </div>
     );
   }
