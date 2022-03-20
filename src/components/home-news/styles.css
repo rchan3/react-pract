@@ -6,7 +6,30 @@
 }
 
 .news h3 {
+  width: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   font-family: Helvetica;
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.news h3::before {
+  content: url(./assets/newsbeforeafter.png);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.news h3::after {
+  content: url(./assets/newsbeforeafter.png);
+  display: inline-block;
+  transform: scaleX(-1);
 }
 
 .news-main {
@@ -18,7 +41,7 @@
 }
 
 .mySwiper {
-  max-width: 50%;
+  max-width: 100%;
   flex-grow: 1;
 }
 
@@ -28,6 +51,7 @@
   object-fit: cover;
   max-height: 100%;
   max-width: 100%;
+  min-height: 400px;
 }
 
 .swiper-pagination-bullet {
@@ -42,6 +66,8 @@
 }
 
 .news-links {
+  box-sizing: border-box;
+  padding: 2%;
   min-width: 50%;
   height: 100%;
   color: white;
@@ -51,11 +77,23 @@
 
 .news-links h4 {
   color: #ffd49f;
+  text-transform: capitalize;
+  text-align: left;
+  font-weight: 400;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 2.5%;
 }
 
 .news-links li {
+  width: auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-overflow: ellipsis;
   overflow: hidden;
   text-align: left;
+  padding: 2.5%;
+  white-space: nowrap;
+}
+
+.news-links li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
