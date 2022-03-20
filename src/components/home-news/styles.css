@@ -75,12 +75,18 @@
   flex-grow: 1;
 }
 
-.news-links h4 {
+.newslinks-header {
   color: #ffd49f;
   text-transform: capitalize;
   text-align: left;
   font-weight: 400;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(255, 212, 159, 1) 13%,
+    rgba(255, 255, 255, 0.3) 13%
+  );
   padding: 2.5%;
 }
 

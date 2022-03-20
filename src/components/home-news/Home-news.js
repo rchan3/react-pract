@@ -61,7 +61,9 @@ class HomeNews extends Component {
             {this.newsCarousel()}
           </Swiper>
           <div className="news-links">
-            <h4>latest</h4>
+            <div className="newslinks-header">
+              <h4>latest</h4>
+            </div>
             <div className="news-list">
               <ul>
                 <li>"Of Drink A-Dreaming" Gameplay Details</li>
