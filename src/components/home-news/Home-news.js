@@ -75,7 +75,6 @@ class HomeNews extends Component {
                   Engulfing Lightning (Polearm) and Everlasting Moonglow
                   (Catalyst)!
                 </li>
-                <li>more</li>
               </ul>
             </div>
           </div>
