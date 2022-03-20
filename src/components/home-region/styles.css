@@ -94,6 +94,7 @@
   width: 100%;
   height: 30vh;
   color: rgba(255, 255, 255, 0.3);
+  position: relative;
 }
 
 .region-star {
