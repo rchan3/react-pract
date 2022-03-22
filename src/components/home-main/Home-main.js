@@ -1,4 +1,9 @@
 import React from "react";
+import videoBorder from "./assets/home-main-video-border.png";
+import playstationLink from "./assets/ps-link.png";
+import iosLink from "./assets/ios-link.png";
+import androidLink from "./assets/android-link.png";
+import pcLink from "./assets/pc-link.png";
 import "./styles.css";
 
 const HomeMainComponent = (props) => {
@@ -6,7 +11,7 @@ const HomeMainComponent = (props) => {
     <div className="home">
       <div className="home-main-flex">
         <div className="home-main-video-link">
-          <img src={require("./assets/home-main-video-border.png")} alt="" />
+          <img src={videoBorder} alt="" />
         </div>
         <div className="home-main-download-text">
           Released on Multiple Platforms - Download Now!
@@ -17,40 +22,28 @@ const HomeMainComponent = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={require("./assets/caf1de876b2d79715604463df4187b2f_4939885485338929477.png")}
-              alt=""
-            />
+            <img src={playstationLink} alt="" />
           </a>
           <a
             href="https://apps.apple.com/app/id1517783697"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={require("./assets/6ff53bc5d797e9efc2ac7b2b602c267a_8295237617862628623.png")}
-              alt=""
-            />
+            <img src={iosLink} alt="" />
           </a>
           <a
             href="https://play.google.com/store/apps/details?id=com.miHoYo.GenshinImpact"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={require("./assets/396b8eb0d0d2f27aadb476e0b62d0926_8878641138830187947.png")}
-              alt=""
-            />
+            <img src={androidLink} alt="" />
           </a>
           <a
             href="https://sg-public-api.hoyoverse.com/event/download_porter/link/ys_global/genshinimpactpc/default"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={require("./assets/a27edf5aa048e9509f0850856ad3f403_396608336029707725.png")}
-              alt=""
-            />
+            <img src={pcLink} alt="" />
           </a>
         </div>
         <div className="home-main-down-arrow">
