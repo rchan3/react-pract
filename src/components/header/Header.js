@@ -1,6 +1,8 @@
 import React from "react";
 import { headerLinks } from "../../constants";
 import downloadButton from "./assets/download.png";
+import genshinLogo from "./assets/genshin_logo.png";
+import loginIcon from "./assets/login_icon.png";
 import "./styles.css";
 
 const HeaderComponent = (props) => {
@@ -50,13 +52,16 @@ const HeaderComponent = (props) => {
     <header className="App-header">
       <div className="header-left">
         <div className="genshin-logo">
-          <img src={require("./assets/genshin_logo.png")} alt="" />
+          <img src={genshinLogo} alt="" />
         </div>
         <ul className="navigation">{renderLinks()}</ul>
       </div>
 
       <div className="logindownload">
-        <div>log in</div>
+        <div className="login-link">
+          <p>log in</p>
+          <img src={loginIcon} alt="" />
+        </div>
         <div className="download-link"></div>
         <img src={downloadButton} alt=""></img>
       </div>
