@@ -14,13 +14,33 @@ const HeaderComponent = (props) => {
 
   const renderLinks = () => {
     const linkArr = [];
+    let linkCount = 0;
     headerLinks.forEach((link) => {
-      const listElement = (
-        <li className="navigation-links" key={link}>
-          {link}
-        </li>
-      );
-      linkArr.push(listElement);
+      if (linkCount === 3) {
+        const listElement = (
+          <li className="navigation-links" key={link}>
+            {link}
+            <div className="nav-dropdown">
+              <ul>
+                <li>about game</li>
+                <li>teyvat</li>
+                <li>itinerary</li>
+                <li>manga</li>
+              </ul>
+            </div>
+          </li>
+        );
+        linkArr.push(listElement);
+        linkCount++;
+      } else {
+        const listElement = (
+          <li className="navigation-links" key={link}>
+            {link}
+          </li>
+        );
+        linkArr.push(listElement);
+        linkCount++;
+      }
     });
 
     return linkArr;
