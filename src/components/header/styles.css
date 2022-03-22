@@ -97,6 +97,25 @@
   text-transform: capitalize;
 }
 
+.login-link {
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.login-link img {
+  opacity: 0.6;
+}
+
+.login-link:hover {
+  color: white;
+}
+
+.login-link:hover > img {
+  opacity: 1;
+}
+
 .download-link {
   color: black;
   background-color: yellow;
