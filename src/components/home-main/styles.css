@@ -15,6 +15,30 @@
   gap: 4vh;
 }
 
+.home-main-video-link {
+  position: relative;
+}
+
+.video-button {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 1;
+}
+.v-button-inactive {
+  padding-bottom: 1px;
+  z-index: 2;
+}
+.v-button-inactive:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
 .home-main-download-text {
   text-shadow: 0 0 10px rgb(114 71 21 / 68%), 0 0 10px rgb(114 71 21 / 68%);
 }

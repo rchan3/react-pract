@@ -4,6 +4,8 @@ import playstationLink from "./assets/ps-link.png";
 import iosLink from "./assets/ios-link.png";
 import androidLink from "./assets/android-link.png";
 import pcLink from "./assets/pc-link.png";
+import videoButton from "./assets/main-video-button.png";
+import videoButtonHover from "./assets/main-video-hover-button.png";
 import "./styles.css";
 
 const HomeMainComponent = (props) => {
@@ -12,6 +14,14 @@ const HomeMainComponent = (props) => {
       <div className="home-main-flex">
         <div className="home-main-video-link">
           <img src={videoBorder} alt="" />
+
+          <img
+            className="video-button v-button-inactive"
+            src={videoButton}
+            alt=""
+          />
+
+          <img className="video-button" src={videoButtonHover} alt="" />
         </div>
         <div className="home-main-download-text">
           Released on Multiple Platforms - Download Now!
