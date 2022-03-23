@@ -11,6 +11,35 @@ import "./styles.css";
 const HomeMainComponent = (props) => {
   return (
     <div className="home">
+      <div className="socials-sidebar">
+        <div className="open-close"></div>
+        <div sidebar-contents>
+          <p>Follow us</p>
+          <ul>
+            <li>
+              <span className="icon-fb"></span>Facebook
+            </li>
+            <li>
+              <span className="icon-twt"></span>Twitter
+            </li>
+            <li>
+              <span className="icon-yt"></span>Youtube
+            </li>
+            <li>
+              <span className="icon-ig"></span>Instagram
+            </li>
+            <li>
+              <span className="icon-discord"></span>Discord
+            </li>
+            <li>
+              <span className="icon-reddit"></span>Reddit
+            </li>
+            <li>
+              <span className="icon-hoyo"></span>HoYoLAB
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="home-main-flex">
         <div className="home-main-video-link">
           <img src={videoBorder} alt="" />
@@ -21,7 +50,11 @@ const HomeMainComponent = (props) => {
             alt=""
           />
 
-          <img className="video-button" src={videoButtonHover} alt="" />
+          <img
+            className="video-button v-button-active"
+            src={videoButtonHover}
+            alt=""
+          />
         </div>
         <div className="home-main-download-text">
           Released on Multiple Platforms - Download Now!

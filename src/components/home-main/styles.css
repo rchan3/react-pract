@@ -1,9 +1,90 @@
+@font-face {
+  font-family: "icomoon";
+  src: URL("./assets/22f27ca97c50aa5ea6c7dd6e32967b20_686384518099903488.ttf")
+    format("truetype");
+}
+
 .home {
   color: white;
   font-size: 30px;
   background-image: url(./assets/47f71d4.jpg);
   min-height: 100vh;
   position: relative;
+}
+
+.socials-sidebar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 999;
+  color: black;
+  font-size: 18px;
+  background-color: white;
+  font-weight: 400;
+  padding: 1px;
+}
+
+.socials-sidebar p {
+  padding-top: 15px;
+  padding: 15px;
+}
+
+.socials-sidebar li {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials-sidebar li:hover {
+  cursor: pointer;
+  background-color: #333;
+  color: #ffd49f;
+}
+
+.icon-fb::before {
+  font-weight: 400;
+  font-family: "icomoon";
+  content: "a";
+  text-align: left;
+}
+
+.icon-twt::before {
+  font-family: "icomoon";
+  content: "d";
+}
+
+.icon-yt::before {
+  font-family: "icomoon";
+  content: "e";
+}
+
+.icon-ig::before {
+  font-family: "icomoon";
+  content: "b";
+}
+
+.icon-discord::before {
+  font-family: "icomoon";
+  content: "f";
+}
+
+.icon-reddit::before {
+  font-family: "icomoon";
+  content: "g";
+}
+
+.icon-hoyo::before {
+  font-family: "icomoon";
+  content: "i";
 }
 
 .home-main-flex {
