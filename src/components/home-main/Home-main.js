@@ -1,4 +1,5 @@
 import React from "react";
+import $ from "jquery";
 import videoBorder from "./assets/home-main-video-border.png";
 import playstationLink from "./assets/ps-link.png";
 import iosLink from "./assets/ios-link.png";
@@ -9,6 +10,14 @@ import videoButtonHover from "./assets/main-video-hover-button.png";
 import "./styles.css";
 
 const HomeMainComponent = (props) => {
+  $(document).on("scroll", function() {
+    if ($(this).scrollTop() < 10) {
+      $(".socials-sidebar").css("opacity", "0");
+    } else {
+      $(".socials-sidebar").css("opacity", "1");
+    }
+  });
+
   return (
     <div className="home">
       <div className="socials-sidebar">
