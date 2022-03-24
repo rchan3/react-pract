@@ -26,6 +26,7 @@
   background-color: white;
   font-weight: 400;
   padding: 1px;
+  transition: all 0.5s linear;
 }
 
 .socials-sidebar p {

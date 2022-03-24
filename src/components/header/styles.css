@@ -13,6 +13,14 @@
   min-height: 7vh;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
 .header-left {
   display: flex;
 }

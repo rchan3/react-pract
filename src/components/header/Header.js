@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { headerLinks } from "../../constants";
 import downloadButton from "./assets/download.png";
 import genshinLogo from "./assets/genshin_logo.png";
@@ -20,8 +21,8 @@ const HeaderComponent = (props) => {
     headerLinks.forEach((link) => {
       if (linkCount === 3) {
         const listElement = (
-          <li className="navigation-links" key={link}>
-            {link}
+          <li className="navigation-links" key={link.linkName}>
+            {link.linkName}
             <div className="nav-dropdown">
               <ul>
                 <li>about game</li>
@@ -36,8 +37,8 @@ const HeaderComponent = (props) => {
         linkCount++;
       } else {
         const listElement = (
-          <li className="navigation-links" key={link}>
-            {link}
+          <li className="navigation-links" key={link.linkName}>
+            <Link to={link.linkRoute}> {link.linkName}</Link>
           </li>
         );
         linkArr.push(listElement);
