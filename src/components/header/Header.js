@@ -7,19 +7,27 @@ import loginIcon from "./assets/login_icon.png";
 import "./styles.css";
 
 const HeaderComponent = (props) => {
-  // const [loginColor, setLoginColor] = useState("pink");
-
-  // const loginStyles = { color: loginColor };
-
-  // const onLoginClick = () => {
-  //   setLoginColor("green");
-  // };
-
   const renderLinks = () => {
     const linkArr = [];
     let linkCount = 0;
     headerLinks.forEach((link) => {
-      if (linkCount === 3) {
+      if (linkCount === 3 && linkCount === props.active) {
+        const listElement = (
+          <li className="navigation-links active-page" key={link.linkName}>
+            {link.linkName}
+            <div className="nav-dropdown">
+              <ul>
+                <li>about game</li>
+                <li>teyvat</li>
+                <li>itinerary</li>
+                <li>manga</li>
+              </ul>
+            </div>
+          </li>
+        );
+        linkArr.push(listElement);
+        linkCount++;
+      } else if (linkCount === 3) {
         const listElement = (
           <li className="navigation-links" key={link.linkName}>
             {link.linkName}
@@ -31,6 +39,14 @@ const HeaderComponent = (props) => {
                 <li>manga</li>
               </ul>
             </div>
+          </li>
+        );
+        linkArr.push(listElement);
+        linkCount++;
+      } else if (linkCount === props.active) {
+        const listElement = (
+          <li className="navigation-links active-page" key={link.linkName}>
+            <Link to={link.linkRoute}> {link.linkName}</Link>
           </li>
         );
         linkArr.push(listElement);

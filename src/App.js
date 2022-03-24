@@ -7,8 +7,6 @@ import HomeMain from "./components/home-main/Home-main";
 import HomeNews from "./components/home-news/Home-news";
 import HomeRegion from "./components/home-region/Home-region";
 
-const headerHeight = 7;
-
 const App = (props) => {
   return (
     <div className="App">
@@ -27,7 +25,7 @@ const App = (props) => {
 const Home = (props) => {
   return (
     <div id="home">
-      <Header height={headerHeight} />
+      <Header active={0} />
       <main className="main">
         <HomeMain />
         <HomeNews />
@@ -41,7 +39,7 @@ const Home = (props) => {
 const News = (props) => {
   return (
     <div id="news">
-      <Header height={headerHeight} />
+      <Header active={1} />
       <h1>news page</h1>
       <Footer />
     </div>
@@ -51,7 +49,7 @@ const News = (props) => {
 const Characters = (props) => {
   return (
     <div id="characters">
-      <Header height={headerHeight} />
+      <Header active={2} />
       <h1>char page</h1>
       <Footer />
     </div>
@@ -61,7 +59,7 @@ const Characters = (props) => {
 const Hoyolab = (props) => {
   return (
     <div id="hoyolab">
-      <Header height={headerHeight} />
+      <Header active={4} />
       <h1>hoyo page</h1>
       <Footer />
     </div>
@@ -71,7 +69,7 @@ const Hoyolab = (props) => {
 const TopUp = (props) => {
   return (
     <div id="top-up">
-      <Header height={headerHeight} />
+      <Header active={5} />
       <h1>topup page</h1>
       <Footer />
     </div>
@@ -81,7 +79,7 @@ const TopUp = (props) => {
 const RedeemCode = (props) => {
   return (
     <div id="redeem-code">
-      <Header height={headerHeight} />
+      <Header active={6} />
       <h1>redeemcode page</h1>
       <Footer />
     </div>
