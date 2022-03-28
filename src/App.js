@@ -8,6 +8,7 @@ import HomeNews from "./components/home-news/Home-news";
 import HomeRegion from "./components/home-region/Home-region";
 
 const App = (props) => {
+  // const [activeHeader, setActiveHeader] = useState(0);
   return (
     <div className="App">
       <Routes>

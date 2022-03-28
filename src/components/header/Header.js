@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { headerLinks } from "../../constants";
+import Dropdown from "./Dropdown";
 import downloadButton from "./assets/download.png";
 import genshinLogo from "./assets/genshin_logo.png";
 import loginIcon from "./assets/login_icon.png";
@@ -9,56 +10,28 @@ import "./styles.css";
 const HeaderComponent = (props) => {
   const renderLinks = () => {
     const linkArr = [];
-    let linkCount = 0;
     headerLinks.forEach((link) => {
-      if (linkCount === 3 && linkCount === props.active) {
+      if (link.isDropdown === true) {
         const listElement = (
-          <li className="navigation-links active-page" key={link.linkName}>
-            {link.linkName}
-            <div className="nav-dropdown">
-              <ul>
-                <li>about game</li>
-                <li>teyvat</li>
-                <li>itinerary</li>
-                <li>manga</li>
-              </ul>
-            </div>
-          </li>
+          <Dropdown
+            active={link.linkRoute === useLocation().pathname ? true : false}
+            linkInfo={link}
+            key={link.linkName}
+          />
         );
         linkArr.push(listElement);
-        linkCount++;
-      } else if (linkCount === 3) {
-        const listElement = (
-          <li className="navigation-links" key={link.linkName}>
-            {link.linkName}
-            <div className="nav-dropdown">
-              <ul>
-                <li>about game</li>
-                <li>teyvat</li>
-                <li>itinerary</li>
-                <li>manga</li>
-              </ul>
-            </div>
-          </li>
-        );
-        linkArr.push(listElement);
-        linkCount++;
-      } else if (linkCount === props.active) {
-        const listElement = (
-          <li className="navigation-links active-page" key={link.linkName}>
-            <Link to={link.linkRoute}> {link.linkName}</Link>
-          </li>
-        );
-        linkArr.push(listElement);
-        linkCount++;
       } else {
         const listElement = (
-          <li className="navigation-links" key={link.linkName}>
+          <li
+            className={`navigation-links ${
+              link.linkRoute === useLocation().pathname ? "active-page" : ""
+            }`}
+            key={link.linkName}
+          >
             <Link to={link.linkRoute}> {link.linkName}</Link>
           </li>
         );
         linkArr.push(listElement);
-        linkCount++;
       }
     });
 
@@ -73,7 +46,6 @@ const HeaderComponent = (props) => {
         </div>
         <ul className="navigation">{renderLinks()}</ul>
       </div>
-
       <div className="logindownload">
         <div className="login-link">
           <p>log in</p>
